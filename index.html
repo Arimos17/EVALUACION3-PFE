@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Formulario Ubicación</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="./estilos.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="navbar-nav nav">
+              <a class="nav-link" href="index.html">Recargar Página</a>
+              <a class="nav-link" href="https://restcountries.com/v3.1/lang/spanish">API</a>
+            </div>
+      </nav>
+    <main class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Formulario Ubicación</h2>
+                <div class="mb-2">
+                    <label for="Pais" class="form-label">País</label>
+                    <input 
+                        type="text" 
+                        id="Pais"
+                        class="form-control"
+                        placeholder="Ingrese País">
+                    <span id="validPais"></span>
+                </div>
+                <div class="mb-2">
+                    <label for="capital" class="form-label">Capital</label>
+                    <input 
+                        type="text" 
+                        id="capital" 
+                        class="form-control"
+                        placeholder="Ingrese capital">
+                    <span id="validCapital"></span>  
+                </div> 
+                <div class="mb-2">
+                    <label for="region" class="form-label">Región</label>
+                    <input 
+                        type="text" 
+                        id="region" 
+                        class="form-control"
+                        placeholder="Ingrese región">
+                    <span id="validRegion"></span>  
+                </div> 
+                <div class="mb-2">
+                    <label for="continente" class="form-label">Continente</label>
+                    <input 
+                        type="text" 
+                        id="continente" 
+                        class="form-control"
+                        placeholder="Ingrese continente">
+                    <span id="validContinente"></span>  
+                </div>                 
+                <input type="button" onclick="leerForms();" class="btn btn-info" value="Guardar">
+            </div>
+    <div class="col-md-6">
+        <table class="table table-bordered border-Secondary">
+            <thead>
+                <tr>
+                    <th>País</th>
+                    <th>Capital</th>
+                    <th>Región</th>
+                    <th>Continente</th>
+                    <th>Opción</th>
+                </tr>
+            </thead>
+            <tbody id="data"></tbody>
+        </table>
+    </div>
+    <script src="funciones.js"></script>
+</html>

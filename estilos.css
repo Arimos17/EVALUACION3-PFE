@@ -1,0 +1,30 @@
+
+nav{text-align:center;
+}
+
+h2{ font-size: xx-large;
+    text-align:center; 
+    border:  2px solid rgb(239, 238, 238);
+
+}
+body{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.border-input-error{
+    border: 2px solid red;
+}
+.border-input-error:focus{
+    border: 2px solid red;
+    box-shadow: 2px 2px 2px red;
+}
+.border-input-ok{
+    border: 2px solid green;
+}
+
+th{ font-size: x-large;
+   text-align:center; 
+   border: 2px solid rgb(239, 238, 238) ;
+}
+table{
+    border: 2px solid ;
+}
